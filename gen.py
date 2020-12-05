@@ -4,8 +4,8 @@ import os
 import sys
 
 
-def eprint(t: str, ex: Exception = None) -> None:
-    print(t, ex, file=sys.stderr)
+def eprint(t: str) -> None:
+    print(t, file=sys.stderr)
 
 def py_template(day: int) -> str:
     return f"""#!/usr/bin/env python3
