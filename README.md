@@ -4,6 +4,7 @@ Here are my personal solutions for [Advent of Code 2020](https://adventofcode.co
 
 * [Day 01](01)
 * [Day 02](02)
+* [Day 03](03)
 
 
 ## Hint
