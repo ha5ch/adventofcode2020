@@ -18,10 +18,10 @@ def read():
     with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),'data'), 'r') as f:
         return f.read()
 
-def part_one():
+def part_one(data):
     pass
 
-def part_two():
+def part_two(data):
     pass
 
 
@@ -32,10 +32,9 @@ def main():
     args = parser.parse_args()
 
     data = read()
-
-    # YOUR CODE HERE -->
-
-    # <--
+    
+    part_one(data)
+    part_two(data)
 
 
 if __name__ == '__main__':
