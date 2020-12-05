@@ -18,23 +18,24 @@ def read():
     with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),'data'), 'r') as f:
         return f.read()
 
-def part_one(data):
+def part_one(data, verbose=False):
     pass
 
-def part_two(data):
+def part_two(data, verbose=False):
     pass
 
 
 def main():
     parser = ArgumentParser()
-    # add arguments here ...
+    parser.add_argument('-v', '--verbose', action='store_true')
+    # add additional arguments here ...
 
     args = parser.parse_args()
 
     data = read()
     
-    part_one(data)
-    part_two(data)
+    part_one(data, args.verbose)
+    part_two(data, args.verbose)
 
 
 if __name__ == '__main__':
