@@ -11,7 +11,12 @@ def py_template(day: int) -> str:
     return f"""#!/usr/bin/env python3
 ## https://adventofcode.com/2020/day/{day}
 from argparse import ArgumentParser
+import os
 import sys
+
+def read():
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),'data'), 'r') as f:
+        return f.read()
 
 def part_one():
     pass
@@ -25,6 +30,8 @@ def main():
     # add arguments here ...
 
     args = parser.parse_args()
+
+    data = read()
 
     # YOUR CODE HERE -->
 
